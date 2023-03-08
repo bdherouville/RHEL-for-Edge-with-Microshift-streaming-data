@@ -1,0 +1,8 @@
+- route:
+    id: route-ca7a
+    from:
+      uri: file:/data
+      id: from-4999
+      parameters:
+        charset: UTF-8
+        fileName: dataset_power_consumption.csv
