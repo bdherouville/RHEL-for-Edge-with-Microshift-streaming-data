@@ -1,0 +1,17 @@
+[package]
+name = "csv-to-rest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+reqwest = { version = "*", features = ["blocking", "json"] }
+http = "*"
+anyhow = "*"
+stomp-rs = "*"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1

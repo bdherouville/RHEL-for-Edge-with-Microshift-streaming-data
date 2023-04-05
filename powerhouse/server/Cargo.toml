@@ -1,0 +1,15 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["Your Name <yourname@example.com>"]
+edition = "2021"
+
+[dependencies]
+actix-web = "*"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "*"
+chrono = "*"
+hyper = "*"
+async-std = "*"
+futures = "*"
+tokio = { version = "*", features = ["full"] }
